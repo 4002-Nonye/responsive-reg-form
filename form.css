@@ -65,7 +65,7 @@ h1 {
 	background-color: var(--accent-color-blue);
 
 	text-align: center;
-	padding: 1rem 2rem;
+	padding: 1rem 3rem;
 	align-items: center;
 	border-radius: 0.55rem;
 	color: white;
@@ -204,6 +204,7 @@ input[type="password"] {
 	h1 {
 		font-size: 40px;
 		font-weight: 700;
+		margin-bottom: 0.4rem;
 	}
 	.left__paragraph {
 		line-height: 1.5em;
@@ -220,7 +221,7 @@ input[type="password"] {
 
 	.deal__trial {
 		border-radius: 0.5rem;
-		padding: 1rem 2rem;
+		padding: 1rem 3rem;
 		line-height: 1.5em;
 	}
 
@@ -233,13 +234,20 @@ input[type="password"] {
 		padding: 0;
 		font-weight: 700;
 	}
+	.error__icon,
+	.error__icon1,
+	.error__icon2,
+	.error__icon3 {
+		position: absolute;
+		opacity: 1;
+	}
 
 	.btn__submit {
 		font-weight: 500;
-
+		font-size: 14px;
 		margin: 0.5rem;
 		width: 90%;
-		padding: 0.5rem 1rem;
+		padding: 0.7rem 1rem;
 		border: none;
 		border-radius: 0.2rem;
 		box-shadow: 0.5px 3px 0 rgba(60, 170, 70, 0.6);
@@ -278,26 +286,85 @@ input[type="password"] {
 		font-weight: 700;
 		font-style: italic;
 	}
-}
-
-@media (max-width: 500px) {
-	.error__message {
-		color: red;
-		font-weight: 400;
-		font-size: 11px;
-		margin: 0;
-		margin-left: 3rem;
-		padding: 0;
-		font-weight: 700;
-		font-style: italic;
-	}
-
 	.error__icon,
 	.error__icon1,
 	.error__icon2,
 	.error__icon3 {
 		position: absolute;
 		opacity: 0;
-		margin: -4.7rem 4rem;
+	}
+}
+@media (max-width: 768px) {
+	.error__message {
+		color: red;
+		font-weight: 400;
+		font-size: 11px;
+		margin: 0;
+		margin-left: 17rem;
+		padding: 0;
+		font-weight: 700;
+		font-style: italic;
+	}
+@media (max-width: 500px) {
+	main {
+		width: 100%;
+	}
+
+	.error__message {
+		color: red;
+		font-weight: 400;
+		font-size: 11px;
+		margin: 0;
+		margin-left: 5rem;
+		padding: 0;
+		font-weight: 700;
+		font-style: italic;
+	}
+	.element__wrap {
+		margin-bottom: 2rem;
+	}
+	.error__icon,
+	.error__icon1,
+	.error__icon2,
+	.error__icon3 {
+		position: absolute;
+		opacity: 0;
+	}
+	h1 {
+		font-weight: 700;
+		font-size: 28px;
+	}
+	.btn__submit {
+		padding: 0.5rem 1rem;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 400px) {
+	.left__paragraph {
+		line-height: 1.5em;
+		padding: 0.5rem 0;
+		font-weight: 600;
+
+		font-size: 16px;
+	}
+	.error__icon,
+	.error__icon1,
+	.error__icon2,
+	.error__icon3 {
+		position: absolute;
+		opacity: 0;
+		margin: -4.7rem 5rem;
+	}
+	.deal__trial {
+		border-radius: 0.5rem;
+		padding: 1rem 1.5rem;
+		line-height: 1.5em;
+	}
+	.left__paragraph {
+		line-height: 1.5em;
+		padding: 1rem;
+		font-weight: 600;
+		font-size: 14px;
 	}
 }
