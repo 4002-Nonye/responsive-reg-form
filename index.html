@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<title>Single-page responsive registeration form</title>
+	</head>
+	<body>
+		<main>
+			<div class="elements__wrap">
+				<div class="left__div">
+					<h1>Learn to code by watching others</h1>
+					<p class="left__paragraph">
+						See how experienced developers solve problems in real
+						time. Watching scripted tutorials is great, but
+						understanding how developers think is invaluable.
+					</p>
+				</div>
+
+				<div class="right__div">
+					<div class="form__container">
+						<p class="deal__trial">
+							<span class="bold"> Try it free 7 days </span>
+							then $20/mo. thereafter
+						</p>
+
+						<form class="form" action="#">
+							<div>
+								<input
+									type="text"
+									name="fname"
+									placeholder="First Name"
+									class="firstname"
+								/>
+
+								<span class="error__icon"
+									><img src="icon-error.svg"
+								/></span>
+
+								<p class="error__message firstname__error">
+									First Name cannot be empty
+								</p>
+							</div>
+
+							<div>
+								<input
+									type="text"
+									name="lname"
+									placeholder="Last Name"
+									class="lastname"
+								/><span class="error__icon1"
+									><img
+										src="icon-error.svg"
+										class="lname__error_icon"
+								/></span>
+
+								<p class="error__message lastname__error">
+									Last Name cannot be empty
+								</p>
+							</div>
+
+							<div>
+								<input
+									type="email"
+									name="email"
+									placeholder="Email Address"
+									class="email"
+								/><span class="error__icon2"
+									><img
+										src="icon-error.svg"
+										class="email__error_icon"
+								/></span>
+
+								<p class="error__message email__error">
+									Looks like this is not an email
+								</p>
+							</div>
+
+							<div>
+								<input
+									type="password"
+									name="password"
+									placeholder="Password"
+									class="password"
+								/><span class="error__icon3"
+									><img
+										src="icon-error.svg"
+										class="password__error_icon"
+								/></span>
+
+								<p class="error__message password__error">
+									Password cannot be empty
+								</p>
+							</div>
+
+							<div>
+								<button type="submit" class="btn__submit">
+									CLAIM YOUR FREE TRIAL
+								</button>
+							</div>
+							<div class="form__condition">
+								By clicking the button, you are agreeing to our
+								<a class="terms" href="#"
+									>Terms and Services.
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script type="text/javascript" src="form.js"></script>
+	</body>
+</html>
