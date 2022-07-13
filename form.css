@@ -22,6 +22,8 @@ body {
 	background-color: var(--primary-color-red);
 	font-family: "Poppins", sans-serif;
 	height: 100%;
+	max-width:1440px;
+	margin:0 auto;
 }
 html {
 	box-sizing: border-box;
